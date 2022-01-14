@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import splashy from 'splashy';
+import splashy from 'splashy'
 
 export default {
   props: {
@@ -40,20 +40,18 @@ export default {
   data() {
     return {
       color: '#000000'
-    };
+    }
   },
   methods: {
     getIcon(pic) {
-      let imageBody = require(`../assets/icons/${pic}`);
+      let imageBody = require(`../assets/icons/${pic}`)
 
-      splashy(imageBody).then(
-        ([dominantColor]) => (this.color = dominantColor)
-      );
+      splashy(imageBody).then(([dominantColor]) => (this.color = dominantColor))
 
-      return imageBody;
+      return imageBody
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

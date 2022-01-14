@@ -30,7 +30,7 @@ export const JS_FRAMEWORKS = [
     icon: 'ampersand.svg',
     website: 'https://ampersandjs.com/'
   }
-];
+]
 
 export const JS_PREPROCESSORS = [
   {
@@ -53,7 +53,7 @@ export const JS_PREPROCESSORS = [
     icon: 'cljs.svg',
     website: 'https://clojurescript.org/'
   }
-];
+]
 
 export const CSS_FRAMEWORKS = [
   {
@@ -81,7 +81,7 @@ export const CSS_FRAMEWORKS = [
     icon: 'tailwindcss.svg',
     website: 'https://tailwindcss.com/'
   }
-];
+]
 
 export const CSS_PREPROCESSORS = [
   {
@@ -106,7 +106,7 @@ export const CSS_PREPROCESSORS = [
     icon: 'postcss.svg',
     website: 'https://postcss.org/'
   }
-];
+]
 
 export const SGBD = [
   {
@@ -174,7 +174,7 @@ export const SGBD = [
     icon: 'timescale.svg',
     website: 'https://www.timescale.com/'
   }
-];
+]
 
 export const BACKEND_ENVIRONMENTS = [
   {
@@ -473,4 +473,4 @@ export const BACKEND_ENVIRONMENTS = [
       }
     ]
   }
-];
+]

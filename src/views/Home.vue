@@ -55,8 +55,8 @@
                       change(
                         'backend_framework',
                         backend_environment.frameworks
-                      );
-                    });
+                      )
+                    })
                   }
                 "
               />
@@ -91,8 +91,8 @@
 </template>
 
 <script>
-import StackItem from '@/components/StackItem.vue';
-import { sample as _sample } from 'lodash';
+import StackItem from '@/components/StackItem.vue'
+import { sample as _sample } from 'lodash'
 import {
   JS_FRAMEWORKS,
   JS_PREPROCESSORS,
@@ -100,7 +100,7 @@ import {
   CSS_PREPROCESSORS,
   SGBD,
   BACKEND_ENVIRONMENTS
-} from '@/stacks.js';
+} from '@/stacks.js'
 
 export default {
   name: 'Home',
@@ -125,34 +125,34 @@ export default {
       sgbd: null,
       backend_environment: null,
       backend_framework: null
-    };
+    }
   },
   methods: {
     change(property, list, callback) {
-      this[property] = null;
+      this[property] = null
       setTimeout(() => {
-        this[property] = _sample(list);
-        if (typeof callback === 'function') callback();
-      }, 100);
+        this[property] = _sample(list)
+        if (typeof callback === 'function') callback()
+      }, 100)
     },
     generateStack() {
-      this.jsFramework = null;
-      this.jsPreprocessor = null;
-      this.cssFramework = null;
-      this.cssPreprocessor = null;
-      this.sgbd = null;
-      this.backend_environment = null;
-      this.backend_framework = null;
+      this.jsFramework = null
+      this.jsPreprocessor = null
+      this.cssFramework = null
+      this.cssPreprocessor = null
+      this.sgbd = null
+      this.backend_environment = null
+      this.backend_framework = null
 
       setTimeout(() => {
-        this.jsFramework = _sample(JS_FRAMEWORKS);
-        this.jsPreprocessor = _sample(JS_PREPROCESSORS);
-        this.cssFramework = _sample(CSS_FRAMEWORKS);
-        this.cssPreprocessor = _sample(CSS_PREPROCESSORS);
-        this.sgbd = _sample(SGBD);
-        this.backend_environment = _sample(BACKEND_ENVIRONMENTS);
-        this.backend_framework = _sample(this.backend_environment.frameworks);
-      }, 250);
+        this.jsFramework = _sample(JS_FRAMEWORKS)
+        this.jsPreprocessor = _sample(JS_PREPROCESSORS)
+        this.cssFramework = _sample(CSS_FRAMEWORKS)
+        this.cssPreprocessor = _sample(CSS_PREPROCESSORS)
+        this.sgbd = _sample(SGBD)
+        this.backend_environment = _sample(BACKEND_ENVIRONMENTS)
+        this.backend_framework = _sample(this.backend_environment.frameworks)
+      }, 250)
     }
   },
   computed: {
@@ -165,25 +165,25 @@ export default {
         this.sgbd !== null ||
         this.backend_environment !== null ||
         this.backend_framework !== null
-      );
+      )
     }
   },
   mounted() {
-    this.generateStack();
+    this.generateStack()
     if (this.$confetti.canvas && this.$confetti.canvas.clear) {
-      this.$confetti.canvas.clear();
-      this.$confetti.stop();
+      this.$confetti.canvas.clear()
+      this.$confetti.stop()
       if (this.$confetti.animationId) {
-        cancelAnimationFrame(this.$confetti.animationId);
+        cancelAnimationFrame(this.$confetti.animationId)
       }
     }
-    this.$confetti.setDefaults();
-    this.$confetti.start({ particlesPerFrame: 1 });
+    this.$confetti.setDefaults()
+    this.$confetti.start({ particlesPerFrame: 1 })
     setTimeout(() => {
-      this.$confetti.stop();
-    }, 2000);
+      this.$confetti.stop()
+    }, 2000)
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
