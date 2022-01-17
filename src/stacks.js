@@ -1,10 +1,6 @@
 export const JS_FRAMEWORKS = [
   { name: 'Angular', icon: 'angular.svg', website: 'https://angular.io' },
-  {
-    name: 'Backbone',
-    icon: 'backbone.svg',
-    website: 'http://backbonejs.org/'
-  },
+  { name: 'Backbone', icon: 'backbone.svg', website: 'http://backbonejs.org/' },
   { name: 'Ember.js', icon: 'ember.svg', website: 'http://emberjs.com/' },
   { name: 'jQuery', icon: 'jquery.svg', website: 'https://jquery.com/' },
   {
@@ -14,22 +10,31 @@ export const JS_FRAMEWORKS = [
   },
   { name: 'Vue.js', icon: 'vue.svg', website: 'http://vuejs.org/' },
   { name: 'Svelte', icon: 'svelte.svg', website: 'https://svelte.dev/' },
-  {
-    name: 'Mithril',
-    icon: 'mithril.svg',
-    website: 'https://mithril.js.org/'
-  },
+  { name: 'Mithril', icon: 'mithril.svg', website: 'https://mithril.js.org/' },
   { name: 'Aurelia', icon: 'aurelia.svg', website: 'http://aurelia.io/' },
-  {
-    name: 'CanJS',
-    icon: 'canjs.svg',
-    website: 'https://canjs.com/'
-  },
+  { name: 'CanJS', icon: 'canjs.svg', website: 'https://canjs.com/' },
   {
     name: 'Ampersand.js',
     icon: 'ampersand.svg',
     website: 'https://ampersandjs.com/'
-  }
+  },
+  { name: 'Next.js', icon: 'next.svg', website: 'https://nextjs.org/' },
+  { name: 'Preact', icon: 'preact.png', website: 'https://preactjs.com/' },
+  { name: 'Riot', icon: 'riot.svg', website: 'https://riot.js.org/' },
+  {
+    name: 'Polymer',
+    icon: 'polymer.png',
+    website: 'https://polymer-library.polymer-project.org/'
+  },
+  { name: 'Lit', icon: 'lit.png', website: 'https://lit.dev/' },
+  { name: 'Marko', icon: 'marko.svg', website: 'https://markojs.com/' },
+  { name: 'Dojo', icon: 'dojo.png', website: 'https://dojotoolkit.org/' },
+  {
+    name: 'Hyperapp',
+    icon: 'no-icon.png',
+    website: 'https://github.com/jorgebucaran/hyperapp'
+  },
+  { name: 'Knockout', icon: 'knockout.svg', website: 'https://knockoutjs.com/' }
 ]
 
 export const JS_PREPROCESSORS = [
@@ -52,6 +57,11 @@ export const JS_PREPROCESSORS = [
     name: 'ClojureScript',
     icon: 'cljs.svg',
     website: 'https://clojurescript.org/'
+  },
+  {
+    name: 'Flow',
+    icon: 'flow.png',
+    website: 'https://flow.org/'
   }
 ]
 
@@ -80,6 +90,47 @@ export const CSS_FRAMEWORKS = [
     name: 'Tailwind CSS',
     icon: 'tailwindcss.svg',
     website: 'https://tailwindcss.com/'
+  },
+  { name: 'MUI', icon: 'mui.png', website: 'https://mui.com/' },
+  { name: 'Bulma', icon: 'bulma.png', website: 'https://bulma.io/' },
+  {
+    name: 'Spectre',
+    icon: 'spectre.jpg',
+    website: 'https://picturepan2.github.io/spectre/'
+  },
+  {
+    name: 'Skeleton',
+    icon: 'skeleton.png',
+    website: 'http://getskeleton.com/'
+  },
+  { name: 'Pure.css', icon: 'pure.png', website: 'https://purecss.io/' },
+  { name: 'UIKit', icon: 'uikit.png', website: 'https://getuikit.com/' },
+  {
+    name: 'Element Plus',
+    icon: 'element-plus.png',
+    website: 'https://element-plus.org/en-US/'
+  },
+  {
+    name: 'PaperCSS',
+    icon: 'no-icon.png',
+    website: 'https://www.getpapercss.com/'
+  },
+  {
+    name: 'Milligram',
+    icon: 'milligram.png',
+    website: 'https://milligram.io/'
+  },
+  { name: 'Base', icon: 'base.svg', website: 'https://getbase.org/' },
+  { name: 'Picnic CSS', icon: 'no-icon.png', website: 'https://picnicss.com/' },
+  {
+    name: 'Mustard UI',
+    icon: 'no-icon.png',
+    website: 'https://kylelogue.github.io/mustard-ui/index.html'
+  },
+  {
+    name: 'TentCSS',
+    icon: 'tent-css.png',
+    website: 'https://css.sitetent.com/'
   }
 ]
 
@@ -173,6 +224,17 @@ export const SGBD = [
     name: 'Timescale',
     icon: 'timescale.svg',
     website: 'https://www.timescale.com/'
+  },
+  { name: 'Fauna', icon: 'fauna.svg', website: 'https://fauna.com/' },
+  {
+    name: 'DynamoDB',
+    icon: 'dynamodb.png',
+    website: 'https://aws.amazon.com/dynamodb'
+  },
+  {
+    name: 'InfluxDB',
+    icon: 'influxdb.svg',
+    website: 'https://www.influxdata.com/'
   }
 ]
 
@@ -324,6 +386,36 @@ export const BACKEND_ENVIRONMENTS = [
         name: 'KeystoneJS',
         icon: 'keystonejs.svg',
         website: 'https://www.keystonejs.com/'
+      },
+      {
+        name: 'Firebase',
+        icon: 'firebase.png',
+        website: 'https://firebase.google.com/'
+      },
+      {
+        name: 'Supabase',
+        icon: 'supabase.svg',
+        website: 'https://supabase.com/'
+      },
+      {
+        name: 'Fastify',
+        icon: 'fastify.png',
+        website: 'https://www.fastify.io/'
+      },
+      {
+        name: 'Adonis',
+        icon: 'adonis.png',
+        website: 'https://adonisjs.com/'
+      },
+      {
+        name: 'PostGraphile',
+        icon: 'postgraphile.svg',
+        website: 'https://www.graphile.org/'
+      },
+      {
+        name: 'Loopback',
+        icon: 'loopback.svg',
+        website: 'https://loopback.io/'
       }
     ]
   },
